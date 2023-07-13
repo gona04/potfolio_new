@@ -1,0 +1,35 @@
+.logos{
+    height: 30vh;
+}
+.content-styling {
+    align-self: flex-start;
+}
+
+.tcs-logo {
+    height: 10vh;
+    align-self: center;
+}
+
+.giriraj-logo {
+    height: 10vh;
+}
+
+.aseum-logo {
+    height: 10vh;
+}
+
+ /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+ @media screen and (max-width: 500px) {
+
+    .tcs-logo {
+        margin-top:10vh;
+        margin-bottom: 5vh;
+    }
+    .giriraj-logo {
+        margin-bottom: 5vh;
+    }
+    .aseum-logo {
+        height: 10vh;
+        margin-bottom: 6vh;
+    }
+  }

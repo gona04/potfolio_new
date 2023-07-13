@@ -1,0 +1,7 @@
+<footer class="icon-background-styling">
+    <div class="set_of_logos sticky-bottom" *ngFor="let dl of displayloop">
+        <a target="_blank" [href]="dl.workLink">
+            <img [src]="dl.icon_address" [alt]="dl.alt_text" [class]="dl.class_name">
+        </a>
+    </div>
+</footer>

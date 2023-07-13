@@ -1,0 +1,64 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+@import url("https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css");
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('./assets/fonts/Open_Sans/static/OpenSans-Light.ttf');
+    font-style:thin;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Open sans';
+    src: url('./assets/fonts/Open_Sans/static/OpenSans-Regular.ttf');
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Open sans';
+    src: url('./assets/fonts/Open_Sans/static/OpenSans-SemiBold.ttf');
+    font-style: semi-bold;
+    font-weight: 600;
+}
+
+html, body {
+    padding:0rem;
+    margin:0rem;
+    box-sizing: border-box;
+    font-family:'Open sans';
+    font-weight: 300;
+  }
+
+  h4 {
+    font-family: 'Open sans';
+    font-weight: 600;
+  }
+.setingup-page {
+    display: flex; 
+    flex-direction: column; 
+     justify-content: center; 
+     align-items: center; 
+     padding:10vw; 
+     background-color:#141313; 
+     color: #7c7a7ab3; 
+     font-size: 1.5rem;
+}
+
+.logos {
+    display: flex;
+    flex-direction: row;
+    width:80%;
+    justify-content: space-around;
+}
+
+  /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+  @media screen and (max-width: 500px) {
+    .logos {
+        display: flex;
+        width:80%;
+        justify-content: center;
+        flex-direction: column;
+    }
+  }
