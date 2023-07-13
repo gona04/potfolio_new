@@ -25,7 +25,7 @@ export class FooterComponent implements OnInit {
         console.log(event);
         let newEvent:any = event
 
-        if(newEvent.url == "/it_work") {
+        if(newEvent.url == "/it_work" || newEvent.url == "/") {
           this.displayloop = [];
           this.displayloop.push({alt_text: "linkedin", icon_address: "assets/icons/linkedin.svg", workLink: "https://in.linkedin.com/in/goonja-gandhi-66a64526", class_name: "linkedin-styling"})
           this.displayloop.push({alt_text: "github_link", icon_address: "assets/icons/github.svg", workLink:"https://github.com/gona04", class_name: "github-styling"})

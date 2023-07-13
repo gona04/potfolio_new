@@ -21,15 +21,14 @@
  /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
  @media screen and (max-width: 500px) {
 
-    .tcs-logo {
-        margin-top:10vh;
-        margin-bottom: 5vh;
-    }
-    .giriraj-logo {
-        margin-bottom: 5vh;
-    }
-    .aseum-logo {
-        height: 10vh;
-        margin-bottom: 6vh;
-    }
+   .logos {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+   }
+   .tcs-logo, .giriraj-logo, .aseum-logo {
+        height:8vh;
+   }
+    
   }

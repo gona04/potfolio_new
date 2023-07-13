@@ -2,13 +2,22 @@
     align-self: flex-start;
 }
 
+.logos {
+    height:30vh;
+}
+
  /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
  @media screen and (max-width: 500px) {
 
-    .emotional_fulls {
-        margin-bottom: 4vh;
-    }
-    .giriraj-logo {
-        margin-bottom: 4vh;
+    .logos {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+       }
+       
+    .digital_clay, .emotional_fulls {
+        max-height: 15vh;
+        margin-bottom:2vh;
     }
   }
