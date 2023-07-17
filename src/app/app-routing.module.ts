@@ -4,9 +4,9 @@ import { ItWorkComponent } from './it-work/it-work.component';
 import { MusicWorkComponent } from './music-work/music-work.component';
 
 const routes: Routes = [
-  {path: "", redirectTo: "it_work", pathMatch:"full"},
-  {path: "it_work", component: ItWorkComponent},
-  {path:"music_work", component:MusicWorkComponent}
+  {path: "", redirectTo: "web_application_development_work", pathMatch:"full"},
+  {path: "web_application_development_work", component: ItWorkComponent},
+  {path:"music_direction_song_writing_work", component:MusicWorkComponent}
 ];
 
 @NgModule({
