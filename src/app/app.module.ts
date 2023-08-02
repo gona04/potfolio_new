@@ -7,6 +7,7 @@ import { HeaderComponent } from './header/header.component';
 import { ItWorkComponent } from './it-work/it-work.component';
 import { FooterComponent } from './footer/footer.component';
 import { MusicWorkComponent } from './music-work/music-work.component';
+import { ImageSliderComponent } from './it-work/image-slider/image-slider.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { MusicWorkComponent } from './music-work/music-work.component';
     HeaderComponent,
     ItWorkComponent,
     FooterComponent,
-    MusicWorkComponent
+    MusicWorkComponent,
+    ImageSliderComponent
   ],
   imports: [
     BrowserModule,
