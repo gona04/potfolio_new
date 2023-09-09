@@ -7,7 +7,7 @@ import { AboutComponent } from './about/about.component';
 const routes: Routes = [
   {path: "", redirectTo: "web_application_development_work", pathMatch:"full"},
   {path: "web_application_development_work", component: ItWorkComponent},
-  {path:"music_direction_song_writing_work", component:MusicWorkComponent},
+  {path:"about/music_direction_song_writing_work", component:MusicWorkComponent},
   {path: "about", component: AboutComponent}
 ];
 

@@ -4,8 +4,22 @@
     justify-content: start;
     width: 100%;
 }
-div.display-9 {
+div.list-project {
     align-self: flex-start;
+    display: flex;
+    justify-content: space-evenly;
+
+    .inner-box {
+        display: flex;
+        width:20rem;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items:center;
+        margin-right: 2rem;
+        iframe {
+            height: 25rem;
+        }
+    }
 }
 .logos{
     height: 30vh;
@@ -28,9 +42,78 @@ div.display-9 {
     height: 10vh;
 }
 
+@media screen and (max-width: 1280px) {
+    div.list-project {
+        align-self: center;
+        display: flex;
+        justify-content: space-between;
+        .inner-box {
+            display: flex;
+            width: 12rem;
+            flex-direction: column;
+            align-items:center;
+            iframe {
+                height: 25rem;
+                width: 12rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    div.list-project {
+        align-self: center;
+        display: flex;
+        justify-content: center;
+        .inner-box {
+            display: flex;
+            width: 13rem;
+            flex-direction: column;
+            align-items:center;
+            iframe {
+                height: 25rem;
+                width: 12rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:820px) {
+    div.list-project {
+        align-self: center;
+        display: flex;
+        justify-content: center;
+        .inner-box {
+            display: flex;
+            width: 10rem;
+            flex-direction: column;
+            align-items:center;
+            iframe {
+                height: 25rem;
+                width: 9rem;
+            }
+        }
+    }
+}
+
  /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
  @media screen and (max-width: 500px) {
-
+    div.list-project {
+        align-self: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        .inner-box {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items:center;
+            iframe {
+                height: 25rem;
+                width: 80vw;
+            }
+        }
+    }
    .logos {
     display:flex;
     flex-direction: column;
@@ -42,3 +125,4 @@ div.display-9 {
    }
     
   }
+
