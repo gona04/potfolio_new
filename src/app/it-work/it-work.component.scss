@@ -1,45 +1,39 @@
-.setingup-page {
-    padding:2rem;
-    display: flex;
-    justify-content: start;
-    width: 100%;
+.top-margin {
+ margin-top: 5em;
 }
-div.list-project {
-    align-self: flex-start;
-    display: flex;
-    justify-content: space-evenly;
+div.new-video-playlist {
+    background-color: hsla(0, 0%, 0%, 0.569);
+    display: flex; 
+    width: 100vw; 
+    height: 30rem; 
+    justify-content: center;
 
-    .inner-box {
-        display: flex;
-        width:20rem;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items:center;
-        margin-right: 2rem;
-        iframe {
-            height: 25rem;
-        }
+    .sub-video-playlist {
+        color: #ffff; 
+         width: 100%; 
+         margin-inline: 2rem;
+
+         .video-with-text {
+            width: 100%; 
+            height:95%; 
+            display: flex; 
+            flex-direction: column; 
+            justify-content: space-between; 
+            align-items: stretch;
+         }
     }
 }
-.logos{
-    height: 30vh;
-}
+
 .text-12 {
     font-size: 12px;
     font-style: italic;
 }
-
-.tcs-logo {
-    height: 10vh;
-    align-self: center;
-}
-
-.giriraj-logo {
-    height: 10vh;
-}
-
-.aseum-logo {
-    height: 10vh;
+.actual-text {
+    text-align: center; 
+    font-weight: bolder;
+    font-size: 2rem;
+    color: darkcyan;
+    text-decoration: none;
 }
 
 @media screen and (max-width: 1280px) {
@@ -94,6 +88,14 @@ div.list-project {
             }
         }
     }
+
+    div.new-video-playlist {
+        flex-direction: column;
+        height: 100vh;
+        width: 90vw;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
  /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
@@ -114,15 +116,6 @@ div.list-project {
             }
         }
     }
-   .logos {
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-   }
-   .tcs-logo, .giriraj-logo, .aseum-logo {
-        height:8vh;
-   }
     
   }
 

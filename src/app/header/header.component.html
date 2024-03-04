@@ -1,8 +1,9 @@
 <nav class=" header sticky-top">
-    <a href="#default" class="logo">Goonja Gandhi</a>
-    <div class="header-right">
-      <a [routerLinkActive]="['active']" [routerLink]="['web_application_development_work']">Web & Application development</a>
-      <a [routerLinkActive]="['active']" [routerLink]="['about']">About</a>
+    <a [routerLink]="['']" class="logo">Goonja Gandhi</a>
+    <li class="header-right">
+      <a (click)="scrollToElement('about')" [class.active]="isSectionActive('about')" class="pointer">About</a>
+      <a (click)="scrollToElement('projects')" [class.active]="isSectionActive('projects')" class="pointer">Projects</a>
+      <a (click)="scrollToElement('companies')" [class.active]="isSectionActive('companies')" class="pointer">Companies Worked For</a>
       <a target="_blank" href="assets/resume/GoonjaGandhi_potfolio.pdf">Resume</a>
-    </div>
+    </li>
 </nav>

@@ -1,9 +1,13 @@
 .header {
     overflow: hidden;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.823);
     padding: 20px 10px;
     font-family:'Open sans';
     font-weight: 400;
+  }
+
+  .pointer {
+    cursor: pointer;
   }
   
   /* Style the header links */

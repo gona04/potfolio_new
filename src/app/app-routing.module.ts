@@ -1,18 +1,16 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ItWorkComponent } from './it-work/it-work.component';
 import { MusicWorkComponent } from './music-work/music-work.component';
-import { AboutComponent } from './about/about.component';
+
+import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
-  {path: "", redirectTo: "web_application_development_work", pathMatch:"full"},
-  {path: "web_application_development_work", component: ItWorkComponent},
-  {path:"about/music_direction_song_writing_work", component:MusicWorkComponent},
-  {path: "about", component: AboutComponent}
+  {path: "", pathMatch:"full", component: HomeComponent},
+  {path:"music", component:MusicWorkComponent},
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes ,{useHash: true})],
+  imports: [RouterModule.forRoot(routes ,{ scrollPositionRestoration: 'enabled'},)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
